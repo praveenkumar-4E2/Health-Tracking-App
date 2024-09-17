@@ -10,7 +10,7 @@ const healthRecordSchema = new mongoose.Schema({
         type: Number,
         required: [true, 'Please provide body temperature'],
         min: [35, 'Temperature too low'],
-        max: [110, 'Temperature too high']
+        max: [42, 'Temperature too high']
     },
     bloodPressure: {
         type: String,
